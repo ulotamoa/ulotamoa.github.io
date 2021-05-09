@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <title>Uloz Portfolio</title>
+</head>
+<body>
+    <!-- ローディング画面 -->
+    <div class="loading">
+        <div class="loadbar">
+            <p>Uloz Portfolio Site Loading...</p>
+            <div class="animation">
+                <i class="fas fa-compact-disc"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="icon_list">
+        <a href="#works" class="icon">
+            <img src="images/folder.png" alt="">
+            <p>works</p>
+        </a>
+
+        <a href="#apps" class="icon">
+            <img src="images/folder.png" alt="">
+            <p>apps</p>
+        </a>
+
+        <a href="#about" class="icon">
+            <img src="images/folder.png" alt="">
+            <p>about</p>
+        </a>
+
+        <a href="#contact" class="icon">
+            <img src="images/folder.png" alt="">
+            <p>contact</p>
+        </a>
+
+     </div>
+
+    <!-- work window-->
+    <div class="window" id="works">
+        <div class="window_title">
+            works
+            <a href="#" class="close"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="window_contents">
+            <div class="work_all">
+                <div class="work_box">
+                    <div class="work_img">
+                        <a href="#"><img src="images/drink.jpg" alt=""></a>
+                    </div>
+                    <div class="word_txt">
+                        <h1>Webサイト製作 1</h1>
+                        <p>フルーツジュース専門店</p>
+                    </div>
+                </div>
+                <div class="work_box">
+                    <div class="work_img">
+                        <a href="#"><img src="images/office.jpg" alt=""></a>
+                    </div>
+                    <div class="word_txt">
+                        <h1>Webサイト製作 2</h1>
+                        <p>コーポレートサイト</p>
+                    </div>
+                </div>
+                <div class="work_box">
+                    <div class="work_img">
+                        <a href="#"><img src="images/dental.jpg" alt=""></a>
+                    </div>
+                    <div class="word_txt">
+                        <h1>Webサイト製作 3</h1>
+                        <p>歯医者</p>
+                    </div>
+                </div>
+                <div class="work_box">
+                    <div class="work_img">
+                        <a href="#"><img src="images/cafe.jpg" alt=""></a>
+                    </div>
+                    <div class="word_txt">
+                        <h1>Webサイト製作 4</h1>
+                        <p>カフェ</p>
+                    </div>
+                </div>
+                <div class="work_box">
+                    <div class="work_img">
+                        <a href="#"><img src="images/district.jpg" alt=""></a>
+                    </div>
+                    <div class="word_txt">
+                        <h1>Webサイト製作 5</h1>
+                        <p>自治体サイト</p>
+                    </div>
+                </div>
+                <!-- <div class="work_box">
+                    <div class="work_img">
+                        <img src="images/drink.jpg" alt="">
+                    </div>
+                    <div class="word_txt">
+                        <h1>Webサイト製作 6</h1>
+                        <p>フルーツジュース専門店</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- apps window-->
+    <div class="window" id="apps">
+        <div class="window_title">
+            apps
+            <a href="#" class="close"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="window_contents">
+            <a href="javascript:changeBG()" class="icon bg_icon">
+                <img src="images/bg_icon.png" alt="">
+                <p>背景変更</p>
+            </a>
+        </div>
+    </div>
+
+        <!-- about window-->
+    <div class="window" id="about">
+        <div class="window_title">
+            about
+            <a href="#" class="close"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="window_contents">
+            <div class="about_all">
+                <h1>デバイスの仕様</h1>
+                <dl><dt>デバイス名</dt><dd>Uloz</dd>
+                <dt>プロセッサ</dt><dd>CPU@X.XGHz</dd>
+                <dt>搭載RAM</dt><dd>XX GByte</dd>
+                <dt>実装Skills</dt><dd>html5,css3,Javascript,php,Wordpress,Illustrator,Photoshop</dd>
+                <dt>その他Skills</dt><dd>Autocad,Vba,Access,Excel,Word,Powerpoint</dd>    
+            </dl>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact window-->
+    <div class="window" id="contact">
+        <div class="window_title">
+            contact
+            <a href="#" class="close"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="window_contents">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScBDIEx4KJWH2p42lVYyUItn79Nvy7qLCTbocf4a-ObzRC1TQ/formResponse" target="_self" method="POST" id="mG61Hd">
+                <label class="label" for="name">お名前</label>
+                <input id="name" type="text" name="entry.729002505" placeholder="お名前">
+                <label class="label" for="tel">お電話</label>
+                <input id="tel" type="text" name="entry.466951015" placeholder="電話">
+                <label class="label" for="e-mail">メールアドレス</label>
+                <input id="e-mail" type="email" name="entry.390608339" placeholder="メールアドレス">
+                <label class="label" for="message">内容</label>
+                <textarea rows="10" id="message" placeholder="お問い合わせやご意見など" name="entry.2069609748"></textarea>
+                <input type="submit">
+              </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2019 Uloz
+    </div>
+    
+    <script type="text/javascript">
+        function changeBG(random) {
+            var items = ['/images/bg1.jpg', '/images/bg2.jpg', '/images/bg3.jpg', '/images/bg4.jpg'];
+            var random = Math.floor( Math.random() * items.length );
+            document.body.style.backgroundImage = "url(" + items[random] + ")";
+        }
+
+        // 読み込んだらフェードアウト
+        $(window).on('load', function () {
+            // 消えるタイミング
+            $('.loading').delay(1000).fadeOut(1000);
+        });
+        // 10秒待っても読み込みが終わらない時は強制的にローディング画面をフェードアウト
+        function stopload(){
+            $('.loading').delay(1000).fadeOut(700);
+        }
+        setTimeout('stopload()',10000);
+        
+    </script>
+
+</body>
+</html>
